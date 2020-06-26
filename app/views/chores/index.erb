@@ -1,7 +1,14 @@
+<ul>
+<% @chores.each do |chore| %>
+    <li> <%= chore.name %> <br><br> 
+    <%= chore.description %> <br><br>
+    </li>
+
+<% end %> 
+
+<br><br>
+
+<a href='/chores/new'> Create a Chore </a> 
 
 
-<ul> 
-
-<% @chores.each do |c| %> 
-    <li> <%= c.name %>     
-    </ul> 
+ </ul>

@@ -1,5 +1,5 @@
 require_relative './config/env'
 
 
-use ChoreController 
+use ChoresController 
 run ApplicationController 
