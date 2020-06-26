@@ -2,13 +2,16 @@
 <% @chores.each do |chore| %>
     <li> <%= chore.name %> <br><br> 
     <%= chore.description %> <br><br>
+    <a href="/edit/:id"> Edit Chore </a>
     </li>
 
 <% end %> 
 
 <br><br>
 
-<a href='/chores/new'> Create a Chore </a> 
-
 
  </ul>
+
+ <a href='/chores/new'> Create a Chore </a> <br><br>
+
+<a href='/dashboard'> Back to Dashboard </a>

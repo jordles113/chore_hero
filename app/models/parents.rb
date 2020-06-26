@@ -1,4 +1,7 @@
 class Parent < ActiveRecord::Base
- has_many :kids
- has_many :chores
+    validates :username, uniqueness: true
+    has_secure_password
+
+    has_many :kids
+    has_many :chores
 end 
